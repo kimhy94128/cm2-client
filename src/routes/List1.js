@@ -4,7 +4,7 @@ function List1() {
   return (
     <>
       <div class="row">
-        테스트
+          테스트
        </div>
     </>
   )

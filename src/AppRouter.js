@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Dashboard from './components/Dashboard'
+import Dashboard from './routes/Dashboard'
+import Table from './routes/Table'
 
 
-import List1 from './components/List1'
+import List1 from './routes/List1'
 
 function AppRouter() {
   return (
-    <Router>
       <Switch>
         <Route exact path='/list1' component={Dashboard} />
-        <Route exact path='/list' component={List1} />
+        <Route exact path='/list2' component={List1} />
+        <Route exact path='/list3' component={Table} />
       </Switch>
-    </Router>
   )
 }
 

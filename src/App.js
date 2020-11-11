@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar'
 function App() {
   return (
     <>
+    <Router>
       <Sidebar />
         <div class="main-content">
           <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8"></div>
@@ -16,6 +17,7 @@ function App() {
               <Footer />
           </div>
         </div>
+    </Router>
     </>
   );
 }

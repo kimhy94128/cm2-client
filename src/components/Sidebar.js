@@ -5,17 +5,17 @@ import { BrowserRouter as Router,  Link } from 'react-router-dom'
 const menu = [
   {
     href: '/list1',
-    title: '리스트1',
+    title: '홈',
     icon: ''
   },
   {
     href: '/list2',
-    title: '리스트2',
+    title: '회원목록',
     icon: ''
   },
   {
     href: '/list3',
-    title: '리스트3',
+    title: '수업관리',
     icon: ''
   },
 ]
@@ -25,19 +25,19 @@ const menuList = () => {
 
     menu.map(list => (
       <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link" to={list.href}>
-                  <i></i> {list.title}
-                </Link>
-              </li>
-          </ul>
+        <li className="nav-item">
+          <Link className="nav-link" to={list.href}>
+            <i></i> {list.title}
+          </Link>
+        </li>
+      </ul>
   ))
   )
 }
 
 function Sidebar() {
   return (
-    <Router>
+
     <nav className="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
       <div className="container-fluid">
         {/* <!-- Toggler --> */}
@@ -93,7 +93,6 @@ function Sidebar() {
         </div>
       </div>
     </nav>
-    </Router>
   )
 }
 
